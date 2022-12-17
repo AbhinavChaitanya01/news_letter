@@ -25,10 +25,10 @@ app.post("/",function(req,res){
         ]
     }
     const jsonData=JSON.stringify(data);
-    const url="https://us21.api.mailchimp.com/3.0/lists/7bd4966f09";
+    const url="https://";
     const option={
         method: "POST",
-        auth: "abhinav:08c4d95708f3d08e45d99f441fa6da10-us21",
+        auth: "",
     }
     const request= https.request(url,option,function(response){
         if(res.statusCode===200){
@@ -51,5 +51,3 @@ app.post("/failure",function(req,res){
 app.listen(process.env.PORT||3000,function(req,res){
     console.log("server is running on port 3000");
 });
-// 08c4d95708f3d08e45d99f441fa6da10-us21
-// 7bd4966f09
